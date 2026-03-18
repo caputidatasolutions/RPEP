@@ -1,0 +1,1017 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Monroe County Bid Intelligence</title>
+<style type="text/css">
+    /* RESETS */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; }
+    body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #f4f4f4; }
+
+    /* BRANDING COLORS */
+    /* Primary Brand Blue: #005BBF */
+    /* Accent Green: #78BE20 */
+
+    /* BUTTON STYLES */
+    .nav-link { display: inline-block; padding: 8px 12px; background-color: #ffffff; color: #005BBF; text-decoration: none; border-radius: 4px; border: 1px solid #005BBF; font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-weight: bold; margin: 3px; white-space: nowrap; }
+    .nav-link:hover { background-color: #005BBF; color: #ffffff; }
+
+    .view-btn { display: inline-block; color: #ffffff; background-color: #005BBF; font-size: 12px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; padding: 6px 12px; border-radius: 4px; margin-top: 8px; }
+
+    /* TILE STYLES */
+    .tile { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 4px; overflow: hidden; height: 100%; border-top: 3px solid #78BE20; }
+
+    /* BADGE STYLES */
+    .badge-container { margin-bottom: 8px; }
+    .badge-std { background-color: #e6f0fa; color: #005BBF; padding: 3px 6px; border-radius: 3px; font-size: 10px; font-weight: bold; text-transform: uppercase; display: inline-block; margin-right: 4px; font-family: sans-serif; }
+    .badge-new { background-color: #d32f2f; color: #ffffff; padding: 3px 6px; border-radius: 3px; font-size: 10px; font-weight: bold; text-transform: uppercase; display: inline-block; font-family: sans-serif; }
+
+    /* TEXT STYLES */
+    h1, h2 { font-family: Georgia, 'Times New Roman', Times, serif; }
+    h3, p, a { font-family: Helvetica, Arial, sans-serif; }
+
+    /* MEDIA QUERIES */
+    @media screen and (max-width: 600px) {
+        .mobile-width { width: 100% !important; max-width: 100% !important; }
+        .mobile-stack { display: block !important; width: 100% !important; box-sizing: border-box; }
+        .nav-link { font-size: 11px !important; padding: 6px 8px !important; }
+        .header-img { width: 100% !important; height: auto !important; }
+    }
+</style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f4f4;">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" style="padding: 20px 0;">
+
+            <table border="0" cellpadding="0" cellspacing="0" width="640" class="mobile-width" style="background-color: #f4f4f4; max-width: 640px;">
+
+                <!-- HEADER IMAGE -->
+                <tr>
+                    <td align="center" bgcolor="#ffffff" style="padding: 0; border-bottom: 5px solid #78BE20;">
+                        <img src="https://raw.githubusercontent.com/caputidatasolutions/RPEP/9478e30cf997db24f0e33b9f8039e0c5d919343a/RPEP%20RACF%20l.ockup-2.png"
+                             alt="RPEP and The Community Foundation"
+                             width="640"
+                             class="header-img"
+                             style="display: block; border: 0; max-width: 100%; height: auto;" />
+                    </td>
+                </tr>
+
+                <!-- SUMMARY BOX -->
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="padding: 20px 20px 20px 20px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 6px;">
+                            <tr>
+                                <td align="center" style="padding: 20px;">
+                                    <h3 style="margin: 0 0 10px 0; color: #005BBF; font-family: Georgia, serif;">&#128202; Active Opportunities Summary</h3>
+                                    <p style="margin: 0 0 10px 0; font-weight: bold; color: #333;">Total Active Opportunities: 88</p>
+                                    <p style="margin: 0; font-size: 13px; color: #666; line-height: 1.6;">
+                                        Construction: <strong>19</strong> &bull; Public Works &amp; Facilities: <strong>11</strong> &bull; Goods, Supplies &amp; Equipment: <strong>17</strong><br>
+                                        Professional &amp; Consulting Services: <strong>17</strong> &bull; Operations, Maintenance &amp; General Services: <strong>16</strong><br>
+                                        Technology &amp; IT: <strong>6</strong> &bull; Education &amp; Curriculum: <strong>2</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- NAV BAR -->
+                <tr>
+                    <td bgcolor="#ffffff" align="center" style="padding: 10px 10px 5px 10px;">
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <a href="#construction" class="nav-link">&#127959; Construction</a>
+                            <a href="#publicworks" class="nav-link">&#128668; Public Works</a>
+                            <a href="#goods" class="nav-link">&#128230; Goods</a>
+                            <a href="#professional" class="nav-link">&#128188; Pro Services</a>
+                            <a href="#ops" class="nav-link">&#128736; Ops</a>
+                            <a href="#tech" class="nav-link">&#128187; Tech</a>
+                            <a href="#edu" class="nav-link">&#127891; Education</a>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 1: CONSTRUCTION -->
+                <!-- ============================================================ -->
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 20px 10px 20px;" id="construction">
+                        <h2 style="margin: 0; font-size: 22px; color: #005BBF; border-bottom: 1px solid #cccccc; padding-bottom: 10px;">
+                            Construction
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 10px 20px 10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Roof Maintenance and Repair Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/city-of-rochester" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">City Street Improvement</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 27, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/city-of-rochester" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Genesee Crossroads Park Revitalization - Phase 1</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 31, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/city-of-rochester" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Monroe County / MCC</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">MCC Downtown Career Center - Phase 1</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 27, 2026</p>
+                                        <a href="https://webapps.monroecounty.gov/bid/list/publicsp" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Town of Irondequoit</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Town Hall Toilet Room Renovations</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 16, 2026</p>
+                                        <a href="https://www.irondequoit.gov/162/Bids-Purchasing" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Town of Penfield</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Metal Roof Installation - Whalen Road Barn</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.penfield.org/online_documents/rfps_and_bids.php" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Village of Churchville</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Churchville Village Hall Roof Replacement</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 14, 2026</p>
+                                        <a href="https://churchville.net/legal-notices/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Midlakes CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">MES Emergency Roof Project</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 7, 2026</p>
+                                        <a href="https://www.recplanroom.com/projects/public" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Penn Yan CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">2026 Capital Improvement Project</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.recplanroom.com/projects/public" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Spencerport CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">2023 Capital Project Phase 3</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 27, 2026</p>
+                                        <a href="https://www.recplanroom.com/projects/public" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">South Lewis CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Biomass Electrostatic Precipitator (ESP)</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 31, 2026</p>
+                                        <a href="https://www.recplanroom.com/projects/public" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Addison CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Addison Tuscarora Parent Drop Off</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 1, 2026</p>
+                                        <a href="https://www.recplanroom.com/projects/public" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">North Rose-Wolcott CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">2025 Capital Outlay Project</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.recplanroom.com/projects/public" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Wayland-Cohocton CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">2024 CIP Roofing Re-Bid</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 24, 2026</p>
+                                        <a href="https://www.recplanroom.com/projects/public" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Fillmore CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">2023 Capital Improvement - Phase 2</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 1, 2026</p>
+                                        <a href="https://www.recplanroom.com/projects/public" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Honeoye Falls-Lima CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">2022 Capital Improvement - Phase 3C - Window Abatement</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 18, 2026</p>
+                                        <a href="https://www.recplanroom.com/projects/public" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Villager Construction</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">MWBE: City Street Improvement</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 27, 2026</p>
+                                        <a href="https://www.nyscr.ny.gov" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Villager Construction</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">MWBE: Second St/Oak St Rebuild &amp; Rehab</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 20, 2026</p>
+                                        <a href="https://www.nyscr.ny.gov" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">SUNY Brockport</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">REOC Auto Training Bay Code Improvements</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.nyscr.ny.gov" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 2: PUBLIC WORKS & FACILITIES -->
+                <!-- ============================================================ -->
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 20px 10px 20px;" id="publicworks">
+                        <h2 style="margin: 0; font-size: 22px; color: #005BBF; border-bottom: 1px solid #cccccc; padding-bottom: 10px;">
+                            Public Works &amp; Facilities
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 10px 20px 10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Street Lighting Electrical Services Stray Voltage</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 25, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/city-of-rochester" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">MCWA</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Webster WTP Filter Gallery Conduit Replacement</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 24, 2026</p>
+                                        <a href="https://www.mcwa.com/public-information/procurement-opportunities/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">MCWA</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Shoremont WTP Backwash Channel Dredging</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 26, 2026</p>
+                                        <a href="https://www.mcwa.com/public-information/procurement-opportunities/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">RTS</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">A&amp;E Services: Two Waterline Projects</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 20, 2026</p>
+                                        <a href="https://supplierportal.myrts.com/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Town of Irondequoit</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Playground Installation Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 30, 2026</p>
+                                        <a href="https://www.irondequoit.gov/162/Bids-Purchasing" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Town of Irondequoit</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Sanitary Lateral Replacement No. 2026-01</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.irondequoit.gov/162/Bids-Purchasing" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Sewer Main Installation - Railroad Avenue</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: May 1, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Dover Plains Intersection Crosswalk Improvements</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 8, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Hot Mix Asphalt Concrete In-Place</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 15, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Asphalt Pavement Repairs</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 24, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Town of Brighton</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">2023 East Avenue Sidewalk Improvements</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Open / Upon Contract</p>
+                                        <a href="https://www.townofbrighton.org/bids.aspx" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 3: GOODS, SUPPLIES & EQUIPMENT -->
+                <!-- ============================================================ -->
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 20px 10px 20px;" id="goods">
+                        <h2 style="margin: 0; font-size: 22px; color: #005BBF; border-bottom: 1px solid #cccccc; padding-bottom: 10px;">
+                            Goods, Supplies &amp; Equipment
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 10px 20px 10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Police Bicycles, Accessories &amp; Repairs (Rebid)</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 20, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/city-of-rochester" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Greece CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Food Service Serving Line Replacement</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 16, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/greece-central-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Greece CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Milk &amp; Milk Products</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 21, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/greece-central-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Greece CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Convection Ovens</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 14, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/greece-central-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Greece CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">School Lunch Products</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 7, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/greece-central-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Greece CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Bagels</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 9, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/greece-central-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Greece CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Walk In Cooler/Freezer Combo</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 24, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/greece-central-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">MCWA</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Kubota Zero Turn Mower</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 24, 2026</p>
+                                        <a href="https://www.mcwa.com/public-information/procurement-opportunities/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Town of Greece</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">2026 Purchase of Grass Seed</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 16, 2026</p>
+                                        <a href="https://www.newyorkbids.net/government-agencies/monroe/greece-town-of-895/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Chevrolet Box Truck Or Equal</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 1, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Knife Valve 14 Inch DeZurik</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 20, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Steel Storage Container 40 Ft High Cube</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 24, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Snow Plow</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 23, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Weapons Detection System</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 27, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Carpet Extractor</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 20, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Snow Plow Attachment</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 20, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">MCC / DASNY</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">MCC - Optipro Equipment</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 24, 2026</p>
+                                        <a href="https://www.nyscr.ny.gov" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 4: PROFESSIONAL & CONSULTING SERVICES -->
+                <!-- ============================================================ -->
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 20px 10px 20px;" id="professional">
+                        <h2 style="margin: 0; font-size: 22px; color: #005BBF; border-bottom: 1px solid #cccccc; padding-bottom: 10px;">
+                            Professional &amp; Consulting Services
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 10px 20px 10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Workers' Compensation Administration</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 10, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/city-of-rochester" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: Emergency Solutions Grants 2026-27</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 18, 2026</p>
+                                        <a href="https://www.cityofrochester.gov/departments/finance-department/contracts-bids-and-rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: Resident Project Rep - Genesee Crossroads Park</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 20, 2026</p>
+                                        <a href="https://www.cityofrochester.gov/departments/finance-department/contracts-bids-and-rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: 151 Mt Hope Avenue</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 13, 2026</p>
+                                        <a href="https://www.cityofrochester.gov/departments/finance-department/contracts-bids-and-rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: Environmental Cleanup - Olean Kennedy Parcels</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 27, 2026</p>
+                                        <a href="https://www.cityofrochester.gov/departments/finance-department/contracts-bids-and-rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: 2029 Preventative Maintenance Project</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 7, 2026</p>
+                                        <a href="https://www.cityofrochester.gov/departments/finance-department/contracts-bids-and-rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">RTS</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Transit Fare Study</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 27, 2026</p>
+                                        <a href="https://supplierportal.myrts.com/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">MCWA</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">NYS &amp; Federal Legislative Advocacy Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 26, 2026</p>
+                                        <a href="https://www.mcwa.com/public-information/procurement-opportunities/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">MCWA</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Annual On-Site Hearing Tests</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 24, 2026</p>
+                                        <a href="https://www.mcwa.com/public-information/procurement-opportunities/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Monroe County</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: Internal Audit - Monroe County Airport Authority</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 30, 2026</p>
+                                        <a href="https://webapps.monroecounty.gov/bid/list/rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Monroe County</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFQ: Psychiatric Consultation - Socio-Legal Center</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 3, 2026</p>
+                                        <a href="https://webapps.monroecounty.gov/bid/list/rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Monroe County</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: Mental Health Therapy &amp; Medication Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 10, 2026</p>
+                                        <a href="https://webapps.monroecounty.gov/bid/list/rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">RCSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Student Accident Insurance Broker Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 19, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/rochester-city-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Town of Irondequoit</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: General Legal Counsel</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Open</p>
+                                        <a href="https://www.irondequoit.gov/162/Bids-Purchasing" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Town of Irondequoit</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: Planning &amp; Zoning Legal Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Open</p>
+                                        <a href="https://www.irondequoit.gov/162/Bids-Purchasing" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Wetland Delineation &amp; Phase 1B Cultural Resource Assessment</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 16, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Employee Benefits / Health Insurance Broker Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 20, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 5: OPERATIONS, MAINTENANCE & GENERAL SERVICES -->
+                <!-- ============================================================ -->
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 20px 10px 20px;" id="ops">
+                        <h2 style="margin: 0; font-size: 22px; color: #005BBF; border-bottom: 1px solid #cccccc; padding-bottom: 10px;">
+                            Operations, Maintenance &amp; General Services
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 10px 20px 10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Greece CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Bulk &amp; Outside Mail Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 7, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/greece-central-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">RTS</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Wyoming Vehicle Maintenance Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 20, 2026</p>
+                                        <a href="https://supplierportal.myrts.com/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Monroe County</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFP: Food &amp; Beverage Concession - Airport</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 13, 2026</p>
+                                        <a href="https://webapps.monroecounty.gov/bid/list/rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">City of Rochester</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">RFI: Performers - 2026 International Plaza Season</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 23, 2026</p>
+                                        <a href="https://www.cityofrochester.gov/departments/finance-department/contracts-bids-and-rfps" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Rochester Housing Authority</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Lawn Mowing Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 18, 2026</p>
+                                        <a href="https://www.rochesterhousing.org/bid-opportunities" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">RCSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Move Management Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 27, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/rochester-city-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Town of Greece</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">2026 Town Cleaning Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 16, 2026</p>
+                                        <a href="https://www.newyorkbids.net/government-agencies/monroe/greece-town-of-895/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Meneely Bell Updates and Repairs</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 19, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Oil Tank Electronic Monitoring &amp; Repair Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 24, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Burner &amp; Boiler Repair Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 24, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Weight Room &amp; Cardio Equipment Maintenance &amp; Repair</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">HVAC Units, Parts &amp; Supplies Rebid</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Hearing &amp; Vision Equipment Service &amp; Repair</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Re-Entry Transitional Management</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 2, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 6: TECHNOLOGY & IT -->
+                <!-- ============================================================ -->
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 20px 10px 20px;" id="tech">
+                        <h2 style="margin: 0; font-size: 22px; color: #005BBF; border-bottom: 1px solid #cccccc; padding-bottom: 10px;">
+                            Technology &amp; IT
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 10px 20px 10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">RCSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">ERP System &amp; Implementation Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 10, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/rochester-city-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">MCWA</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Oracle Database Administration (DBA) Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 19, 2026</p>
+                                        <a href="https://www.mcwa.com/public-information/procurement-opportunities/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">MCWA</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Multifunction Device / Copier Refresh</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 26, 2026</p>
+                                        <a href="https://www.mcwa.com/public-information/procurement-opportunities/" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">MCC / DASNY</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Re-Bid: Furnish &amp; Install AV Equipment</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 30, 2026</p>
+                                        <a href="https://www.nyscr.ny.gov" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Enterprise Customer Data Platform Service &amp; Support</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 7, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Empire State Purchasing</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Proofpoint Renewal</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 31, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- ============================================================ -->
+                <!-- SECTION 7: EDUCATION & CURRICULUM -->
+                <!-- ============================================================ -->
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 20px 10px 20px;" id="edu">
+                        <h2 style="margin: 0; font-size: 22px; color: #005BBF; border-bottom: 1px solid #cccccc; padding-bottom: 10px;">
+                            Education &amp; Curriculum
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" style="padding: 0 10px 20px 10px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">RCSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">K-8 Universal Screener - ELA &amp; Math</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Apr 7, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/rochester-city-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                                <td valign="top" width="50%" class="mobile-stack" style="padding: 10px;">
+                                    <div class="tile" style="padding: 15px;">
+                                        <div class="badge-container"><span class="badge-std">Greece CSD</span><span class="badge-new">NEW</span></div>
+                                        <h3 style="margin: 0 0 8px 0; font-size: 15px; color: #005BBF;">Tutoring Services</h3>
+                                        <p style="font-size: 12px; color: #666; margin: 0;">Due: Mar 26, 2026</p>
+                                        <a href="https://www.bidnetdirect.com/new-york/greece-central-school-district" class="view-btn">View Bid</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- FOOTER -->
+                <tr>
+                    <td bgcolor="#005BBF" align="center" style="padding: 30px; border-radius: 0 0 4px 4px; border-top: 5px solid #78BE20;">
+                        <p style="margin: 0; font-family: Helvetica, Arial, sans-serif; font-size: 12px; color: #e1edf2;">
+                            &copy; 2026 Rochester Procurement Expansion Program (RPEP)<br>
+                            An initiative of the Rochester Area Community Foundation
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+
